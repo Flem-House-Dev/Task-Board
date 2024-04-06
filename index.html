@@ -20,7 +20,7 @@
     <h1 class="display-3">Task Board</h1>
     <p class="lead">A simple Kanban board for task management</p>
   </header>
-  <div class="container">
+  <div class="container" id="project-display">
     <div class="text-center mb-5">
       <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Add Task</button>
     </div>
@@ -40,16 +40,16 @@
           <div class="modal-body">
             <form id="add-task-form">
               <fieldset>
-                <label for="task-title">Task Title</label>
-                <input type="text" name="task-title" id="task-title" class="test ui-widget-content ui-corner-all">
-                <label for="task-date">Task Date</label>
-                <input type="text" name="task-date" id="task-date" class="test ui-widget-content ui-corner-all">
+                <label for="task-title-input">Task Title</label>
+                <input type="text" name="task-title-input" id="task-title-input" class="test ui-widget-content ui-corner-all">
+                <label for="task-date-input">Task Date</label>
+                <input type="text" name="task-date-input" id="task-date-input" class="test ui-widget-content ui-corner-all">
                 <label for="task-description">Task Description</label>
                 <textarea name="task-description" id="task-description" cols="42" rows="4"
                   class="test ui-widget-content ui-corner-all"></textarea>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="submit" class="btn btn-primary">Create Task</button>
+                  <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Create Task</button>
                 </div>
               </fieldset>
             </form>
@@ -107,7 +107,7 @@
     integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
 
   <!-- <script src="./assets/js/script.js"></script> -->
-  <script src="./test/cpt.js"></script>
+  <script src="./test/test.js"></script>
 </body>
 
 </html>

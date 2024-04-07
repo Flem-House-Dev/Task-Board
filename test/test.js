@@ -141,7 +141,9 @@ function handleAddTask(event) {
     renderTaskList();
 
     // TODO: Clear the form inputs
-    
+    taskTitleInputEl.text("");
+    taskDescriptionInputEl.text("");
+    taskDateInputEl.text("");
 }
 
 // Todo: create a function to handle deleting a task
